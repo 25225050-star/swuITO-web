@@ -1,79 +1,50 @@
-/* 共有レイアウト */
-:root {
-  --brand: #0066cc;
-  --bg: #f7f7fb;
-  --ink: #222;
-  --muted: #6b7280;
-  --accent: #10b981;
-}
-
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
 body {
-  font-family: system-ui, -apple-system, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  line-height: 1.6;
-  color: var(--ink);
-  background: var(--bg);
-  padding: 1.5rem;
+  font-family: sans-serif;
+  line-height: 1.7;
+  max-width: 860px;
+  margin: 24px auto;
+  padding: 0 16px;
+  color: #222;
 }
 
-header, footer { max-width: 960px; margin: 0 auto 1rem; }
-header h1 { margin: 0 0 .25rem; }
-header p { color: var(--muted); }
-
-.card {
-  background: white;
-  border-radius: 12px;
-  padding: 1rem 1.25rem;
-  margin: 1rem auto;
-  max-width: 960px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+h1 {
+  color: #1a3d7c;
+  margin-bottom: 8px;
 }
 
-a { color: var(--brand); text-decoration: none; }
-a:hover { text-decoration: underline; }
-
-.box {
-  background: #eef6ff;
-  border: 1px solid #dbeafe;
-  padding: .75rem;
-  border-radius: 8px;
-  margin-bottom: .5rem;
+h2 {
+  margin-top: 0;
 }
 
-.highlight { background: #fff3cd; padding: .1rem .25rem; border-radius: 4px; }
-
-.note { color: var(--muted); }
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-th, td {
-  border: 1px solid #e5e7eb;
-  padding: .5rem .75rem;
-}
-thead th {
-  background: #f3f4f6;
-  text-align: left;
-}
-tfoot td { color: var(--muted); font-size: .9rem; }
-
-.swatches {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: .75rem;
-  padding: 0;
-}
-.swatches li {
-  border: 1px solid #e5e7eb;
+.intro {
+  background: #f2f6ff;
+  padding: 12px;
   border-radius: 10px;
-  padding: .75rem;
 }
-.c-hex { background: #0066cc22; }
-.c-rgb { background: rgba(0, 102, 204, .15); }
-.c-hsl { background: hsl(210, 100%, 90%); }
 
-/* id と class の例 */
-#unique { border-left: 6px solid var(--accent); padding-left: .5rem; }
+section {
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 12px;
+}
+
+img {
+  display: block;
+  margin: 12px 0;
+  border-radius: 10px;
+}
+
+a {
+  color: #1a3d7c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.small {
+  font-size: 12px;
+  color: #666;
+}
