@@ -3,85 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML/CSS 基礎デモ</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>わたしのポートフォリオ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>HTML/CSS/JS 基礎</h1>
-    <p>このページは <code>div</code> と <code>span</code>、リンク、画像、テーブルを例示します。</p>
+    <h1>わたしのポートフォリオ</h1>
+    <p class="intro">はじめまして。○○大学1年のjjです。</p>
   </header>
 
-  <section id="concepts" class="card">
-    <h2>概念</h2>
-    <ul>
-      <li><strong>HTML</strong>: 文書の構造（見出し・段落・画像・リンク等）を定義。</li>
-      <li><strong>CSS</strong>: 見た目（色、レイアウト、余白、フォント等）を定義。</li>
-      <li><strong>JavaScript</strong>: 振る舞い（インタラクション、動的更新、通信等）を定義。</li>
-    </ul>
-  </section>
+  <main>
+    <section>
+      <h2>自己紹介</h2>
+      <img src="images/sample.jpg" alt="自己紹介の写真" width="240">
+      <p>興味があることは、旅行、カフェです。</p>
+    </section>
 
-  <section id="link" class="card">
-    <h2>リンク（aタグ）</h2>
-    <p>学内ポータルへ：
-      <a href="https://www.swu.ac.jp/" target="_blank" rel="noopener">昭和女子大学</a>
-    </p>
-  </section>
-  <p>自分が行きたい留学先：
-    <a href="https://www.sjtu.edu.cn/" target="_blank" rel="noopener">上海交通大学</a>
-  </p>
-</section>
-  <section id="div-vs-span" class="card">
-    <h2>DIV と SPAN の違い</h2>
-    <div class="box">DIV はブロック要素。幅いっぱいに配置され、上下に積み重なります。</div>
-    <p>一方で <span class="highlight">SPAN はインライン要素</span> です。文の途中の一部にスタイルを当てます。</p>
-  </section>
+    <section>
+      <h2>好きなこと</h2>
+      <ul>
+        <li>カフェめぐり</li>
+        <li>音楽</li>
+        <li>旅行</li>
+      </ul>
+    </section>
 
-  <section id="attrs" class="card">
-    <h2>タグ属性 / id と class</h2>
-    <p>属性はタグに追加情報を与えます。例：<code>img src="..." alt="..."</code>。</p>
-    <p><code>id</code> はページ内で一意。<code>class</code> は複数要素に共通スタイルを付与。</p>
-    <p id="unique">これは <code>id="unique"</code> の段落。</p>
-    <p class="note">これは <code>class="note"</code> の段落（複数に使える）。</p>
-  </section>
-
-  <section id="images" class="card">
-    <h2>画像（img）</h2>
-    <figure>
-      <img src="swu.jfif" alt="サンプル画像" width="320">
-      <figcaption>画像の読み込み例（相対パス）。</figcaption>
-    </figure>
-  </section>
-
-  <section id="table" class="card">
-    <h2>テーブル（table）</h2>
-    <table>
-      <thead>
-        <tr><th>氏名</th><th>学科</th><th>学年</th><th>性別</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>山田花子</td><td>データサイエンス</td><td>１</td></td><td>女性</td></tr>
-        <tr><td>佐藤太郎</td><td>メディア</td><td>２</td></td><td>男性</td></tr>
-        <tr><td>昭和女子</td><td>外国語</td><td>３</td></td><td>女性</td></tr>
-      </tbody>
-      <tfoot>
-        <tr><td colspan="3">※ 表の見出し/本文/注の構造に注意</td></tr>
-      </tfoot>
-    </table>
-  </section>
-
-  <section id="colors" class="card">
-    <h2>カラーの指定</h2>
-    <ul class="swatches">
-      <li class="c-hex">HEX: <code>#0066cc</code></li>
-      <li class="c-rgb">RGB: <code>rgb(0, 102, 204)</code></li>
-      <li class="c-hsl">HSL: <code>hsl(210, 100%, 40%)</code></li>
-    </ul>
-  </section>
+    <section>
+      <h2>リンク</h2>
+      <p>
+        好きなサイト：
+        <a href="https://www.nhk.or.jp/" target="_blank">NHK</a>
+      </p>
+    </section>
+  </main>
 
   <footer>
-    <p>デザインは <code>styles.css</code> を書き換えて確認してください。</p>
-    <script src="../03_js_intro/script.js"></script>
+    <p class="small">© 2025 △△</p>
   </footer>
 </body>
 </html>
